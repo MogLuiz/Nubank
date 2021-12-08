@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,3 +25,9 @@ body {
 
   background-color: #1a1a1a;
 }
+
+@import "partials/menu";
+@import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations";
