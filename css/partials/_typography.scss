@@ -1,0 +1,14 @@
+// Typography of project
+
+@mixin typeface-1($size, $device: desktop) {
+  font-family: "Sora", sans-serif;
+
+  // H1
+  @if $size == h1 and $device == desktop {
+    font-size: 64px;
+    line-height: 100%;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 36px;
+    line-height: 120%;
+  }
+}
