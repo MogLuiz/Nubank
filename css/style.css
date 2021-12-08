@@ -18,4 +18,14 @@ body {
   scroll-behavior: smooth;
   background-color: #1a1a1a;
 }
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
 /*# sourceMappingURL=style.css.map */
