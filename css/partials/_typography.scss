@@ -88,3 +88,21 @@ h2 {
     @include typeface-1(h2, mobile);
   }
 }
+
+h3 {
+  color: $black-dark;
+  @include typeface-1(h3, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+}
+
+h4 {
+  color: $black-dark;
+  @include typeface-1(h4, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+}

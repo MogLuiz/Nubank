@@ -37,6 +37,36 @@ h2 {
   }
 }
 
+h3 {
+  color: #161617;
+  font-family: "Sora", sans-serif;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 960px) {
+  h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+h4 {
+  color: #161617;
+  font-family: "Sora", sans-serif;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 960px) {
+  h4 {
+    font-family: "Sora", sans-serif;
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
