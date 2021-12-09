@@ -102,6 +102,30 @@ p {
   }
 }
 
+.bold {
+  font-weight: bold;
+  color: #353436;
+}
+
+.strong {
+  color: #161617;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 960px) {
+  .strong {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
 }

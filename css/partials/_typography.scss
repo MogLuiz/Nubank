@@ -135,3 +135,21 @@ p {
     @include typeface-2(p2, mobile);
   }
 }
+
+.bold {
+  font-weight: bold;
+  color: $black-light;
+}
+
+.strong {
+  color: $black-dark;
+  @include typeface-2(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
