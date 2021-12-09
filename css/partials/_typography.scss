@@ -125,3 +125,13 @@ h5 {
     @include typeface-1(h5, mobile);
   }
 }
+
+p {
+  color: $gray-3;
+
+  @include typeface-2(p2, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
