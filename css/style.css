@@ -7,6 +7,21 @@
           box-sizing: border-box;
 }
 
+h1 {
+  color: #161617;
+  font-family: "Sora", sans-serif;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-family: "Sora", sans-serif;
+    font-size: 36px;
+    line-height: 120%;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +31,7 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
-  background-color: #1a1a1a;
+  background-color: #edeaef;
 }
 
 img,

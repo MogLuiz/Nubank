@@ -70,3 +70,12 @@
     line-height: 150%;
   }
 }
+
+h1 {
+  color: $black-dark;
+  @include typeface-1(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
