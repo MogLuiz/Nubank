@@ -79,3 +79,12 @@ h1 {
     @include typeface-1(h1, mobile);
   }
 }
+
+h2 {
+  color: $black-dark;
+  @include typeface-1(h2, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+}
