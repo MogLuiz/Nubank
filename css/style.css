@@ -147,4 +147,13 @@ svg {
 .border {
   border: 1px solid red;
 }
+
+header {
+  width: 100%;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: fixed;
+  z-index: 800;
+}
 /*# sourceMappingURL=style.css.map */
