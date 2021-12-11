@@ -8,3 +8,5 @@ const eventScrollHeader = () => {
 
     nav.classList.remove("active-header")
 }
+
+window.addEventListener("scroll", eventScrollHeader)
