@@ -126,6 +126,20 @@ p {
   text-align: center;
 }
 
+a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: none;
+  color: #232224;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -153,6 +167,8 @@ header {
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   position: fixed;
   z-index: 800;
 }
