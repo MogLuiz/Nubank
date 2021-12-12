@@ -21,27 +21,38 @@ const menuItem1 = document.getElementById("menu-item-1")
 const menuItem2 = document.getElementById("menu-item-2")
 const menuItem3 = document.getElementById("menu-item-3")
 
-const showDropdown1 = (event) => {
+const showDropdown1 = event => {
     event.preventDefault()
     dropdownMenu1.classList.toggle("active-dropdown-menu")
     dropdownMenu2.classList.remove("active-dropdown-menu")
     dropdownMenu3.classList.remove("active-dropdown-menu")
 }
 
-const showDropdown2 = (event) => {
+const showDropdown2 = event => {
     event.preventDefault()
     dropdownMenu1.classList.remove("active-dropdown-menu")
     dropdownMenu2.classList.toggle("active-dropdown-menu")
     dropdownMenu3.classList.remove("active-dropdown-menu")
 }
 
-const showDropdown3 = (event) => {
+const showDropdown3 = event => {
     event.preventDefault()
     dropdownMenu1.classList.remove("active-dropdown-menu")
     dropdownMenu2.classList.remove("active-dropdown-menu")
     dropdownMenu3.classList.toggle("active-dropdown-menu")
 }
 
+const removeDropdown = () => {
+    dropdownMenu1.classList.remove("active-dropdown-menu")
+    dropdownMenu2.classList.remove("active-dropdown-menu")
+    dropdownMenu3.classList.remove("active-dropdown-menu")
+}
+
 menuItem1.addEventListener("click", showDropdown1)
 menuItem2.addEventListener("click", showDropdown2)
 menuItem3.addEventListener("click", showDropdown3)
+
+dropdownMenu1.addEventListener("mouseleave", removeDropdown)
+dropdownMenu2.addEventListener("mouseleave", removeDropdown)
+dropdownMenu3.addEventListener("mouseleave", removeDropdown)
+
