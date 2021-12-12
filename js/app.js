@@ -41,3 +41,7 @@ const showDropdown3 = (event) => {
     dropdownMenu2.classList.remove("active-dropdown-menu")
     dropdownMenu3.classList.toggle("active-dropdown-menu")
 }
+
+menuItem1.addEventListener("click", showDropdown1)
+menuItem2.addEventListener("click", showDropdown2)
+menuItem3.addEventListener("click", showDropdown3)
