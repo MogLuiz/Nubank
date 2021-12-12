@@ -67,6 +67,7 @@ header {
     align-items: center;
 
     .menu-item {
+      position: relative;
       margin-left: 16px;
     }
   }
@@ -99,6 +100,66 @@ header {
     &:hover {
       &::after {
         top: 45%;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $white-light;
+    border-radius: 16px;
+
+    padding: 16px 24px;
+
+    list-style: none;
+
+    position: absolute;
+    top: 48px;
+    left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.7s ease;
+
+    .dropdown-item {
+      width: 100%;
+    }
+
+    .active-dropdown-menu {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .nav-link-dropdown {
+      display: inline-block;
+      width: 100%;
+
+      padding: 8px 16px;
+
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 0;
+        transition: 0.5s ease;
+
+        width: 0%;
+        height: 2px;
+
+        background-color: $secondary-normal;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
       }
     }
   }
